@@ -1,6 +1,7 @@
 
-# First to do #
-先在空白專案中安裝node-sass
+# **First to do** #
+
+先在空白專案中安裝node-sass  
 	npm install node-sass
 
 參考他的package-lock.json來改sb-admin-2的package-lock.json
@@ -17,6 +18,7 @@ gulp會執行專案中的gulpfile.js
 * gulp
 
 ## Browsersync ##
+
 會自動開啟localhost:3000
 此時在localhost:3001也會跑Browsersync
 
@@ -25,10 +27,12 @@ gulp會執行專案中的gulpfile.js
 就不用一直在網頁上重新整理了
 
 ## node-sass ##
+
 修改scss/中的.scss檔案，也會自動幫你compile到css/底下的.css內
 
 
 ## glup ##
+
 根據gulpfile.js的語法
 會刪除vendor資料夾
 並新建一次vender資料夾，從node_modules中複製bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing的檔案到vendor底下
