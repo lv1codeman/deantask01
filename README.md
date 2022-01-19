@@ -1,14 +1,13 @@
-
 # First to do #
 
-先在空白專案中安裝**node-sass**  
-```npm install node-sass```  
-
-參考他的package-lock.json來改sb-admin-2的*package-lock.json*  
-(為了讓sb-admin-2安裝時會裝最新版的node-sass)  
+初始npm  
+```npm init```  
   
-改好就可以執行```npm install```了，sb-admin-2會根據他的*package-lock.json*逐一安裝需要的plugin  
-安裝後執行```npm start```  
+安裝plugins  
+```npm install```  
+  
+安裝後執行  
+```npm start```   
   
 **gulp**會執行專案中的gulpfile.js  
   
@@ -36,4 +35,16 @@
 會刪除vendor資料夾  
 並新建一次vender資料夾，從node_modules中複製bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing的檔案到vendor底下  
 
+---
 
+## 我做了什麼修改? ##
+
+在空白專案中安裝**node-sass**  
+```npm init```
+```npm install node-sass```  
+
+參考他的*package-lock.json*來改sb-admin-2的*package-lock.json*  
+(為了讓sb-admin-2安裝時會裝最新版的**node-sass**)  
+  
+改好就可以執行```npm install```了，sb-admin-2會根據他的*package-lock.json*逐一安裝需要的plugin  
+安裝後執行```npm start```  
