@@ -19,3 +19,35 @@
 @import "error.scss";
 @import "footer.scss";
 
+
+.list-group {
+    width: auto;
+    max-width: 150px;
+    // margin: 4rem auto;
+}
+
+.list-group-item-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+    &:active {
+        background-color: #0D6EFD;
+    }
+}
+
+.list-group-checkable .list-group-item {
+    cursor: pointer;
+    border-radius: .5rem;
+    text-align: center;
+
+    // &:hover {
+    //     background-color: #F8F9FA;
+    // }
+}
+
+
+.list-group-checkable {
+    display: grid;
+    // gap: .5rem;
+    border: 0;
+}
