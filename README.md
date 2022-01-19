@@ -1,5 +1,5 @@
 
-## First to do ##
+# First to do #
 先在空白專案中安裝npm install node-sass
 參考他的package-lock.json來改sb-admin-2的package-lock.json
 (為了讓sb-admin-2安裝時會裝最新版的node-sass)
