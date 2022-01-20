@@ -72,9 +72,9 @@
                     <!-- Topbar Search -->
                     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <input id="inputSearch" type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
+                                <button id="btnSearch" class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
@@ -90,7 +90,7 @@
                         <div class="row justify-content-start">
                             <div class="col-1">
                                 <div class="list-group" id="list-tab" role="tablist">
-                                    <a class="list-group-item list-group-item-action active" id="list-MCB-list" data-toggle="list" href="#list-MCB" role="tab" aria-controls="MCB">MCB</a>
+                                    <a class="list-group-item list-group-item-action active" id="list_MCB_list" data-toggle="list" href="#list_MCB" role="tab" aria-controls="MCB">MCB</a>
                                     <a class="list-group-item list-group-item-action" id="list_CB_A_list" data-toggle="list" href="#list_CB_A" role="tab" aria-controls="CB_A">CB#A</a>
                                     <a class="list-group-item list-group-item-action" id="list_CB_B_list" data-toggle="list" href="#list_CB_B" role="tab" aria-controls="CB_B">CB#B</a>
                                     <a class="list-group-item list-group-item-action" id="list_CB_C_list" data-toggle="list" href="#list_CB_C" role="tab" aria-controls="CB_C">CB#C</a>
@@ -114,7 +114,7 @@
                             </div>
                             <div class="col-10">
                                 <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="list-MCB" role="tabpanel" aria-labelledby="list-MCB-list">MCB</div>
+                                    <div class="tab-pane fade active show" id="list_MCB" role="tabpanel" aria-labelledby="list_MCB_list">MCB</div>
                                     <div class="tab-pane fade" id="list_CB_A" role="tabpanel" aria-labelledby="list_CB_A_list">CB#A</div>
                                     <div class="tab-pane fade" id="list_CB_B" role="tabpanel" aria-labelledby="list_CB_B_list">CB#B</div>
                                     <div class="tab-pane fade" id="list_CB_C" role="tabpanel" aria-labelledby="list_CB_C_list">CB#C</div>
@@ -180,6 +180,49 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        //清空list-group和tab-content
+        clear_list_group_tab_content();
+
+        //假設讀取到E1A
+
+
+
+        $(".list-group-item").on('click', function() {
+            $(".list-group-item").each(function(index) {
+                $(this).removeClass("active show");
+            });
+        });
+        // $(".tab-pane").on('click', function() {
+        //     $(".tab-pane").each(function(index) {
+        //         $(this).removeClass("active show");
+        //     });
+        // });
+
+        $("#btnSearch").on('click', function() {
+            //alert($("#inputSearch").val());
+
+            var tar = $("#inputSearch").val();
+
+            clear_list_group_tab_content();
+
+            $("#list_" + tar + "_list").addClass("active show");
+            $("#list_" + tar).addClass("active show");
+            // window.open("blank2.html#aaa","_self");
+        });
+
+
+        function clear_list_group_tab_content() {
+            $(".list-group-item").each(function(index) {
+                $(this).removeClass("active show");
+            });
+            $(".tab-pane").each(function(index) {
+                $(this).removeClass("active show");
+            });
+        }
+    });
+    </script>
 </body>
 
 </html>
