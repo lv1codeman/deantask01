@@ -91,9 +91,9 @@
                             <div class="col-1">
                                 <div class="list-group" id="list-tab" role="tablist">
                                     <a class="list-group-item list-group-item-action active" id="list_MCB_list" data-toggle="list" href="#list_MCB" role="tab" aria-controls="MCB">MCB</a>
-                                    <a class="list-group-item list-group-item-action" id="list_CB_A_list" data-toggle="list" href="#list_CB_A" role="tab" aria-controls="CB_A">CB#A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_CB_B_list" data-toggle="list" href="#list_CB_B" role="tab" aria-controls="CB_B">CB#B</a>
-                                    <a class="list-group-item list-group-item-action" id="list_CB_C_list" data-toggle="list" href="#list_CB_C" role="tab" aria-controls="CB_C">CB#C</a>
+                                    <a class="list-group-item list-group-item-action" id="list_CB_A_list" data-toggle="list" href='#list_CB_A' role="tab" aria-controls="CB#A">CB#A</a>
+                                    <a class="list-group-item list-group-item-action" id="list_CB_B_list" data-toggle="list" href="#list_CB_B" role="tab" aria-controls="CB#B">CB#B</a>
+                                    <a class="list-group-item list-group-item-action" id="list_CB_C_list" data-toggle="list" href="#list_CB_C" role="tab" aria-controls="CB#C">CB#C</a>
                                 </div>
                             </div>
                             <div class="col-1">
@@ -204,10 +204,13 @@
 
         $("#btnSearch").on('click', function() {
             var tar = $("#inputSearch").val();
+            
             clear_list_group_tab_content();
 
-            $("#list_" + tar + "_list").addClass("active show");
-            $("#list_" + tar).addClass("active show");
+            tar = tar.replace('#','_'); //to-do: try to solve the # escape problem.
+
+            $('#list_' + tar + '_list').addClass("active show");
+            $('#list_' + tar).addClass("active show");
         });
 
         function clear_list_group_tab_content() {
