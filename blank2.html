@@ -185,33 +185,19 @@
         //清空list-group和tab-content
         clear_list_group_tab_content();
 
-        //假設讀取到E1A
-
-
-
         $(".list-group-item").on('click', function() {
             $(".list-group-item").each(function(index) {
                 $(this).removeClass("active show");
             });
         });
-        // $(".tab-pane").on('click', function() {
-        //     $(".tab-pane").each(function(index) {
-        //         $(this).removeClass("active show");
-        //     });
-        // });
 
         $("#btnSearch").on('click', function() {
-            //alert($("#inputSearch").val());
-
             var tar = $("#inputSearch").val();
-
             clear_list_group_tab_content();
 
             $("#list_" + tar + "_list").addClass("active show");
             $("#list_" + tar).addClass("active show");
-            // window.open("blank2.html#aaa","_self");
         });
-
 
         function clear_list_group_tab_content() {
             $(".list-group-item").each(function(index) {
