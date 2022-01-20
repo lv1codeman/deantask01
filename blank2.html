@@ -191,6 +191,17 @@
             });
         });
 
+        $("#inputSearch").keypress(function(e) {
+            if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+                //alert('enter');
+                //e.preventDefault();
+                $('#btnSearch').click();
+                return false;
+            } else {
+                return true;
+            }
+        });
+
         $("#btnSearch").on('click', function() {
             var tar = $("#inputSearch").val();
             clear_list_group_tab_content();
