@@ -30,6 +30,7 @@
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none;
+
     &:active {
         background-color: #0D6EFD;
     }
@@ -50,4 +51,10 @@
     display: grid;
     // gap: .5rem;
     border: 0;
+}
+
+.list-group-header {
+    text-align: center;
+    font-weight: 1200;
+    margin-bottom: 0.5rem;
 }

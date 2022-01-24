@@ -47,7 +47,6 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <div class="collapse-divider"></div>
                         <h6 class="collapse-header">寶山校區</h6>
                         <a class="collapse-item active" href="總變電站.html">　總變電站</a>
                         <a class="collapse-item active" href="力行館.html">　力行館</a>
@@ -60,7 +59,6 @@
                         <a class="collapse-item active" href="第九宿舍.html">　第九宿舍</a>
                         <a class="collapse-item active" href="第十宿舍.html">　第十宿舍</a>
                         <div class="dropdown-divider"></div>
-                        <div class="collapse-divider"></div>
                         <h6 class="collapse-header">資料來源</h6>
                         <a class="collapse-item active" href="資料欄位.html">　資料欄位</a>
                     </div>
@@ -104,47 +102,97 @@
                     <div>
                         <div class="row justify-content-start">
                             <div class="col-1">
+                                <div class="list-group-header">
+                                    <h5>高壓電錶</h5>
+                                </div>
                                 <div class="list-group" id="list-tab" role="tablist">
-                                    <a class="list-group-item list-group-item-action active" id="list_MCB_list" data-toggle="list" href="#list_MCB" role="tab" aria-controls="MCB">MCB</a>
-                                    <a class="list-group-item list-group-item-action" id="list_CB_A_list" data-toggle="list" href='#list_CB_A' role="tab" aria-controls="CB#A">CB#A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_CB_B_list" data-toggle="list" href="#list_CB_B" role="tab" aria-controls="CB#B">CB#B</a>
-                                    <a class="list-group-item list-group-item-action" id="list_CB_C_list" data-toggle="list" href="#list_CB_C" role="tab" aria-controls="CB#C">CB#C</a>
+                                    <a class="list-group-item list-group-item-action active" id="HT1" data-toggle="list" href="#list_HT1" role="tab" aria-controls="HT1">HT1</a>
+                                    <a class="list-group-item list-group-item-action" id="HT2" data-toggle="list" href="#list_HT2" role="tab" aria-controls="HT2">HT2</a>
+                                    <a class="list-group-item list-group-item-action" id="HT3" data-toggle="list" href="#list_HT3" role="tab" aria-controls="HT3">HT3</a>
+                                    <a class="list-group-item list-group-item-action" id="HT4" data-toggle="list" href="#list_HT4" role="tab" aria-controls="HT4">HT4</a>
                                 </div>
                             </div>
                             <div class="col-1">
+                                <div class="list-group-header">
+                                    <h5>低壓電錶</h5>
+                                </div>
                                 <div class="list-group" id="list-tab2" role="tablist">
-                                    <a class="list-group-item list-group-item-action" id="list_EB1A_list" data-toggle="list" href="#list_EB1A" role="tab" aria-controls="EB1A">EB1A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_EB2A_list" data-toggle="list" href="#list_EB2A" role="tab" aria-controls="EB2A">EB2A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_EB3A_list" data-toggle="list" href="#list_EB3A" role="tab" aria-controls="EB3A">EB3A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_E1A_list" data-toggle="list" href="#list_E1A" role="tab" aria-controls="E1A">E1A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_E2A_list" data-toggle="list" href="#list_E2A" role="tab" aria-controls="E2A">E2A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_E3A_list" data-toggle="list" href="#list_E3A" role="tab" aria-controls="E3A">E3A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_E4A_list" data-toggle="list" href="#list_E4A" role="tab" aria-controls="E4A">E4A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_E5A_list" data-toggle="list" href="#list_E5A" role="tab" aria-controls="E5A">E5A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_E6A_list" data-toggle="list" href="#list_E6A" role="tab" aria-controls="E6A">E6A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_E7A_list" data-toggle="list" href="#list_E7A" role="tab" aria-controls="E7A">E7A</a>
-                                    <a class="list-group-item list-group-item-action" id="list_SPARE_list" data-toggle="list" href="#list_SPARE" role="tab" aria-controls="SPARE">SPARE</a>
-                                    <a class="list-group-item list-group-item-action" id="list_RB3A_list" data-toggle="list" href="#list_RB3A" role="tab" aria-controls="RB3A">RB3A</a>
+                                    <a class="list-group-item list-group-item-action" id="ACP_SC" data-toggle="list" href="#list_ACP_SC" role="tab" aria-controls="ACP_SC">ACP&SC</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-1" data-toggle="list" href="#list_ML-1" role="tab" aria-controls="ML-1">ML-1</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-2" data-toggle="list" href="#list_ML-2" role="tab" aria-controls="ML-2">ML-2</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-3" data-toggle="list" href="#list_ML-3" role="tab" aria-controls="ML-3">ML-3</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-4" data-toggle="list" href="#list_ML-4" role="tab" aria-controls="ML-4">ML-4</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-5" data-toggle="list" href="#list_ML-5" role="tab" aria-controls="ML-5">ML-5</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-6" data-toggle="list" href="#list_ML-6" role="tab" aria-controls="ML-6">ML-6</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-7" data-toggle="list" href="#list_ML-7" role="tab" aria-controls="ML-7">ML-7</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-8" data-toggle="list" href="#list_ML-8" role="tab" aria-controls="ML-8">ML-8</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-9" data-toggle="list" href="#list_ML-9" role="tab" aria-controls="ML-9">ML-9</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-10" data-toggle="list" href="#list_ML-10" role="tab" aria-controls="ML-10">ML-10</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-11" data-toggle="list" href="#list_ML-11" role="tab" aria-controls="ML-11">ML-11</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-12" data-toggle="list" href="#list_ML-12" role="tab" aria-controls="ML-12">ML-12</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-13" data-toggle="list" href="#list_ML-13" role="tab" aria-controls="ML-13">ML-13</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-14" data-toggle="list" href="#list_ML-14" role="tab" aria-controls="ML-14">ML-14</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-15" data-toggle="list" href="#list_ML-15" role="tab" aria-controls="ML-15">ML-15</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-16" data-toggle="list" href="#list_ML-16" role="tab" aria-controls="ML-16">ML-16</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-17" data-toggle="list" href="#list_ML-17" role="tab" aria-controls="ML-17">ML-17</a>
+                                    <a class="list-group-item list-group-item-action" id="ML-18" data-toggle="list" href="#list_ML-18" role="tab" aria-controls="ML-18">ML-18</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-1" data-toggle="list" href="#list_MP1-1" role="tab" aria-controls="MP1-1">MP1-1</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-2" data-toggle="list" href="#list_MP1-2" role="tab" aria-controls="MP1-2">MP1-2</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-3" data-toggle="list" href="#list_MP1-3" role="tab" aria-controls="MP1-3">MP1-3</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-4" data-toggle="list" href="#list_MP1-4" role="tab" aria-controls="MP1-4">MP1-4</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-5" data-toggle="list" href="#list_MP1-5" role="tab" aria-controls="MP1-5">MP1-5</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-6" data-toggle="list" href="#list_MP1-6" role="tab" aria-controls="MP1-6">MP1-6</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-7" data-toggle="list" href="#list_MP1-7" role="tab" aria-controls="MP1-7">MP1-7</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-8" data-toggle="list" href="#list_MP1-8" role="tab" aria-controls="MP1-8">MP1-8</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-9" data-toggle="list" href="#list_MP1-9" role="tab" aria-controls="MP1-9">MP1-9</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-10" data-toggle="list" href="#list_MP1-10" role="tab" aria-controls="MP1-10">MP1-10</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-11" data-toggle="list" href="#list_MP1-11" role="tab" aria-controls="MP1-11">MP1-11</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-12" data-toggle="list" href="#list_MP1-12" role="tab" aria-controls="MP1-12">MP1-12</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-13" data-toggle="list" href="#list_MP1-13" role="tab" aria-controls="MP1-13">MP1-13</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-14" data-toggle="list" href="#list_MP1-14" role="tab" aria-controls="MP1-14">MP1-14</a>
+                                    <a class="list-group-item list-group-item-action" id="MP1-15" data-toggle="list" href="#list_MP1-15" role="tab" aria-controls="MP1-15">MP1-15</a>
                                 </div>
                             </div>
                             <div class="col-10">
                                 <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade active show" id="list_MCB" role="tabpanel" aria-labelledby="list_MCB_list">MCB</div>
-                                    <div class="tab-pane fade" id="list_CB_A" role="tabpanel" aria-labelledby="list_CB_A_list">CB#A</div>
-                                    <div class="tab-pane fade" id="list_CB_B" role="tabpanel" aria-labelledby="list_CB_B_list">CB#B</div>
-                                    <div class="tab-pane fade" id="list_CB_C" role="tabpanel" aria-labelledby="list_CB_C_list">CB#C</div>
-                                    <div class="tab-pane fade" id="list_EB1A" role="tabpanel" aria-labelledby="list_EB1A_list">EB1A</div>
-                                    <div class="tab-pane fade" id="list_EB2A" role="tabpanel" aria-labelledby="list_EB2A_list">EB2A</div>
-                                    <div class="tab-pane fade" id="list_EB3A" role="tabpanel" aria-labelledby="list_EB3A_list">EB3A</div>
-                                    <div class="tab-pane fade" id="list_E1A" role="tabpanel" aria-labelledby="list_E1A_list">E1A</div>
-                                    <div class="tab-pane fade" id="list_E2A" role="tabpanel" aria-labelledby="list_E2A_list">E2A</div>
-                                    <div class="tab-pane fade" id="list_E3A" role="tabpanel" aria-labelledby="list_E3A_list">E3A</div>
-                                    <div class="tab-pane fade" id="list_E4A" role="tabpanel" aria-labelledby="list_E4A_list">E4A</div>
-                                    <div class="tab-pane fade" id="list_E5A" role="tabpanel" aria-labelledby="list_E5A_list">E5A</div>
-                                    <div class="tab-pane fade" id="list_E6A" role="tabpanel" aria-labelledby="list_E6A_list">E6A</div>
-                                    <div class="tab-pane fade" id="list_E7A" role="tabpanel" aria-labelledby="list_E7A_list">E7A</div>
-                                    <div class="tab-pane fade" id="list_SPARE" role="tabpanel" aria-labelledby="list_SPARE_list">SPARE</div>
-                                    <div class="tab-pane fade" id="list_RB3A" role="tabpanel" aria-labelledby="list_RB3A_list">RB3A</div>
+                                    <div class="tab-pane fade active show" id="list_HT1" role="tabpanel" aria-labelledby="list_HT1">HT1</div>
+                                    <div class="tab-pane fade" id="list_HT2" role="tabpanel" aria-labelledby="list_HT2">HT2</div>
+                                    <div class="tab-pane fade" id="list_HT3" role="tabpanel" aria-labelledby="list_HT3">HT3</div>
+                                    <div class="tab-pane fade" id="list_HT4" role="tabpanel" aria-labelledby="list_HT4">HT4</div>
+                                    <div class="tab-pane fade" id="list_ACP_SC" role="tabpanel" aria-labelledby="list_ACP_SC">ACP&SC</div>
+                                    <div class="tab-pane fade" id="list_ML-1" role="tabpanel" aria-labelledby="list_ML-1">ML-1</div>
+                                    <div class="tab-pane fade" id="list_ML-2" role="tabpanel" aria-labelledby="list_ML-2">ML-2</div>
+                                    <div class="tab-pane fade" id="list_ML-3" role="tabpanel" aria-labelledby="list_ML-3">ML-3</div>
+                                    <div class="tab-pane fade" id="list_ML-4" role="tabpanel" aria-labelledby="list_ML-4">ML-4</div>
+                                    <div class="tab-pane fade" id="list_ML-5" role="tabpanel" aria-labelledby="list_ML-5">ML-5</div>
+                                    <div class="tab-pane fade" id="list_ML-6" role="tabpanel" aria-labelledby="list_ML-6">ML-6</div>
+                                    <div class="tab-pane fade" id="list_ML-7" role="tabpanel" aria-labelledby="list_ML-7">ML-7</div>
+                                    <div class="tab-pane fade" id="list_ML-8" role="tabpanel" aria-labelledby="list_ML-8">ML-8</div>
+                                    <div class="tab-pane fade" id="list_ML-9" role="tabpanel" aria-labelledby="list_ML-9">ML-9</div>
+                                    <div class="tab-pane fade" id="list_ML-10" role="tabpanel" aria-labelledby="list_ML-10">ML-10</div>
+                                    <div class="tab-pane fade" id="list_ML-11" role="tabpanel" aria-labelledby="list_ML-11">ML-11</div>
+                                    <div class="tab-pane fade" id="list_ML-12" role="tabpanel" aria-labelledby="list_ML-12">ML-12</div>
+                                    <div class="tab-pane fade" id="list_ML-13" role="tabpanel" aria-labelledby="list_ML-13">ML-13</div>
+                                    <div class="tab-pane fade" id="list_ML-14" role="tabpanel" aria-labelledby="list_ML-14">ML-14</div>
+                                    <div class="tab-pane fade" id="list_ML-15" role="tabpanel" aria-labelledby="list_ML-15">ML-15</div>
+                                    <div class="tab-pane fade" id="list_ML-16" role="tabpanel" aria-labelledby="list_ML-16">ML-16</div>
+                                    <div class="tab-pane fade" id="list_ML-17" role="tabpanel" aria-labelledby="list_ML-17">ML-17</div>
+                                    <div class="tab-pane fade" id="list_ML-18" role="tabpanel" aria-labelledby="list_ML-18">ML-18</div>
+                                    <div class="tab-pane fade" id="list_MP1-1" role="tabpanel" aria-labelledby="list_MP1-1">MP1-1</div>
+                                    <div class="tab-pane fade" id="list_MP1-2" role="tabpanel" aria-labelledby="list_MP1-2">MP1-2</div>
+                                    <div class="tab-pane fade" id="list_MP1-3" role="tabpanel" aria-labelledby="list_MP1-3">MP1-3</div>
+                                    <div class="tab-pane fade" id="list_MP1-4" role="tabpanel" aria-labelledby="list_MP1-4">MP1-4</div>
+                                    <div class="tab-pane fade" id="list_MP1-5" role="tabpanel" aria-labelledby="list_MP1-5">MP1-5</div>
+                                    <div class="tab-pane fade" id="list_MP1-6" role="tabpanel" aria-labelledby="list_MP1-6">MP1-6</div>
+                                    <div class="tab-pane fade" id="list_MP1-7" role="tabpanel" aria-labelledby="list_MP1-7">MP1-7</div>
+                                    <div class="tab-pane fade" id="list_MP1-8" role="tabpanel" aria-labelledby="list_MP1-8">MP1-8</div>
+                                    <div class="tab-pane fade" id="list_MP1-9" role="tabpanel" aria-labelledby="list_MP1-9">MP1-9</div>
+                                    <div class="tab-pane fade" id="list_MP1-10" role="tabpanel" aria-labelledby="list_MP1-10">MP1-10</div>
+                                    <div class="tab-pane fade" id="list_MP1-11" role="tabpanel" aria-labelledby="list_MP1-11">MP1-11</div>
+                                    <div class="tab-pane fade" id="list_MP1-12" role="tabpanel" aria-labelledby="list_MP1-12">MP1-12</div>
+                                    <div class="tab-pane fade" id="list_MP1-13" role="tabpanel" aria-labelledby="list_MP1-13">MP1-13</div>
+                                    <div class="tab-pane fade" id="list_MP1-14" role="tabpanel" aria-labelledby="list_MP1-14">MP1-14</div>
+                                    <div class="tab-pane fade" id="list_MP1-15" role="tabpanel" aria-labelledby="list_MP1-15">MP1-15</div>
                                 </div>
                             </div>
                         </div>
@@ -195,49 +243,10 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/tabaction.min.js"></script>
     <script type="text/javascript">
     $(function() {
-        //清空list-group和tab-content
-        clear_list_group_tab_content();
 
-        $(".list-group-item").on('click', function() {
-            $(".list-group-item").each(function(index) {
-                $(this).removeClass("active show");
-            });
-        });
-
-        $("#inputSearch").keypress(function(e) {
-            if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-                //alert('enter');
-                //e.preventDefault();
-                $('#btnSearch').click();
-                return false;
-            } else {
-                return true;
-            }
-        });
-
-        $("#btnSearch").on('click', function() {
-            var tar = $("#inputSearch").val();
-
-            clear_list_group_tab_content();
-
-            tar = tar.replace('#', '_'); //to-do: try to solve the # escape problem.
-            // $.escapeSelector('#list_' + tar + '_list').addClass("active show");
-            // $.escapeSelector('#list_' + tar + '_list').addClass("active show");
-
-            $('#list_' + tar + '_list').addClass("active show");
-            $('#list_' + tar).addClass("active show");
-        });
-
-        function clear_list_group_tab_content() {
-            $(".list-group-item").each(function(index) {
-                $(this).removeClass("active show");
-            });
-            $(".tab-pane").each(function(index) {
-                $(this).removeClass("active show");
-            });
-        }
     });
     </script>
 </body>

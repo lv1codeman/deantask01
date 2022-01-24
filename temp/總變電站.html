@@ -98,7 +98,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">汙水處理廠</h1>
+                    <h1 class="h3 mb-4 text-gray-800">總變電站</h1>
                     <div>
                         <div class="row justify-content-start">
                             <div class="col-1">
@@ -106,9 +106,8 @@
                                     <h5>高壓電錶</h5>
                                 </div>
                                 <div class="list-group" id="list-tab" role="tablist">
-                                    <a class="list-group-item list-group-item-action" id="HTM" data-toggle="list" href="#list_HTM" role="tab" aria-controls="HTM">HTM</a>
-                                    <a class="list-group-item list-group-item-action" id="HT1" data-toggle="list" href="#list_HT1" role="tab" aria-controls="HT1">HT1</a>
-                                    <a class="list-group-item list-group-item-action" id="HT2" data-toggle="list" href="#list_HT2" role="tab" aria-controls="HT2">HT2</a>
+                                    <a class="list-group-item list-group-item-action" id="HT0" data-toggle="list" href="#list_HT0" role="tab" aria-controls="HT0">HT0</a>
+                                    <a class="list-group-item list-group-item-action" id="HT3" data-toggle="list" href="#list_HT3" role="tab" aria-controls="HT3">HT3</a>
                                 </div>
                             </div>
                             <div class="col-1">
@@ -116,19 +115,22 @@
                                     <h5>低壓電錶</h5>
                                 </div>
                                 <div class="list-group" id="list-tab2" role="tablist">
-                                    <a class="list-group-item list-group-item-action" id="EMP1" data-toggle="list" href="#list_EMP1" role="tab" aria-controls="EMP1">EMP1</a>
-                                    <a class="list-group-item list-group-item-action" id="EMP2" data-toggle="list" href="#list_EMP2" role="tab" aria-controls="EMP2">EMP2</a>
-                                    <a class="list-group-item list-group-item-action" id="MP1" data-toggle="list" href="#list_MP1" role="tab" aria-controls="MP1">MP1</a>
+                                    <a class="list-group-item list-group-item-action" id="MP-1" data-toggle="list" href="#list_MP-1" role="tab" aria-controls="MP-1">MP-1</a>
+                                    <a class="list-group-item list-group-item-action" id="MP-2" data-toggle="list" href="#list_MP-2" role="tab" aria-controls="MP-2">MP-2</a>
+                                    <a class="list-group-item list-group-item-action" id="MP-3" data-toggle="list" href="#list_MP-3" role="tab" aria-controls="MP-3">MP-3</a>
+                                    <a class="list-group-item list-group-item-action" id="MP-4" data-toggle="list" href="#list_MP-4" role="tab" aria-controls="MP-4">MP-4</a>
+                                    <a class="list-group-item list-group-item-action" id="MP-5" data-toggle="list" href="#list_MP-5" role="tab" aria-controls="MP-5">MP-5</a>
                                 </div>
                             </div>
                             <div class="col-10">
                                 <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade" id="list_HTM" role="tabpanel" aria-labelledby="list_HTM">HTM</div>
-                                    <div class="tab-pane fade" id="list_HT1" role="tabpanel" aria-labelledby="list_HT1">HT1</div>
-                                    <div class="tab-pane fade" id="list_HT2" role="tabpanel" aria-labelledby="list_HT2">HT2</div>
-                                    <div class="tab-pane fade" id="list_EMP1" role="tabpanel" aria-labelledby="list_EMP1">EMP1</div>
-                                    <div class="tab-pane fade" id="list_EMP2" role="tabpanel" aria-labelledby="list_EMP2">EMP2</div>
-                                    <div class="tab-pane fade" id="list_MP1" role="tabpanel" aria-labelledby="list_MP1">MP1</div>
+                                    <div class="tab-pane fade" id="list_HT0" role="tabpanel" aria-labelledby="list_HT0">HT0</div>
+                                    <div class="tab-pane fade" id="list_HT3" role="tabpanel" aria-labelledby="list_HT3">HT3</div>
+                                    <div class="tab-pane fade" id="list_MP-1" role="tabpanel" aria-labelledby="list_MP-1">MP-1</div>
+                                    <div class="tab-pane fade" id="list_MP-2" role="tabpanel" aria-labelledby="list_MP-2">MP-2</div>
+                                    <div class="tab-pane fade" id="list_MP-3" role="tabpanel" aria-labelledby="list_MP-3">MP-3</div>
+                                    <div class="tab-pane fade" id="list_MP-4" role="tabpanel" aria-labelledby="list_MP-4">MP-4</div>
+                                    <div class="tab-pane fade" id="list_MP-5" role="tabpanel" aria-labelledby="list_MP-5">MP-5</div>
                                 </div>
                             </div>
                         </div>
@@ -179,10 +181,44 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <script src="js/tabaction.min.js"></script>
     <script type="text/javascript">
     $(function() {
+        //清空list-group和tab-content
+        clear_list_group_tab_content();
 
+        $(".list-group-item").on('click', function() {
+            $(".list-group-item").each(function(index) {
+                $(this).removeClass("active show");
+            });
+        });
+
+        $("#inputSearch").keypress(function(e) {
+            if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+                //alert('enter');
+                //e.preventDefault();
+                $('#btnSearch').click();
+                return false;
+            } else {
+                return true;
+            }
+        });
+
+        $("#btnSearch").on('click', function() {
+            var tar = $("#inputSearch").val();
+            clear_list_group_tab_content();
+            tar = tar.replace('#', '_');
+            $('#' + tar).addClass("active show");
+            $('#list_' + tar).addClass("active show");
+        });
+
+        function clear_list_group_tab_content() {
+            $(".list-group-item").each(function(index) {
+                $(this).removeClass("active show");
+            });
+            $(".tab-pane").each(function(index) {
+                $(this).removeClass("active show");
+            });
+        }
     });
     </script>
 </body>
