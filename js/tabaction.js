@@ -4,11 +4,18 @@
     //清空list-group和tab-content
     clear_list_group_tab_content();
 
+    $(".dropdown-item").on('click', function() {
+        $(".dropdown-item").each(function(index) {
+            $(this).removeClass("active");
+        });
+    });
+
     $(".list-group-item").on('click', function() {
         $(".list-group-item").each(function(index) {
             $(this).removeClass("active show");
         });
     });
+
 
     $("#inputSearch").keypress(function(e) {
         if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
@@ -35,6 +42,9 @@
         });
         $(".tab-pane").each(function(index) {
             $(this).removeClass("active show");
+        });
+        $(".dropdown-item").each(function(index) {
+            $(this).removeClass("active");
         });
     }
 
