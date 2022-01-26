@@ -4,10 +4,6 @@
     "command": "open_in_browser"
 },
 {
-    "keys": ["ctrl+alt+s"],
-    "command": "reindent"
-},
-{
     "keys": ["alt+s"],
     "command": "htmlprettify"
 },
