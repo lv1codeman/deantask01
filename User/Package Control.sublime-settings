@@ -1,0 +1,20 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ChineseLoremIpsum",
+		"ColorPicker",
+		"Emmet",
+		"FakeImg.pl Image Placeholder Snippet",
+		"Git",
+		"Gitignore",
+		"HTML-CSS-JS Prettify",
+		"Package Control",
+		"SCSS",
+		"SublimeLinter-flake8",
+		"Terminal",
+	],
+}

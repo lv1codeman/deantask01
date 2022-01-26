@@ -1,0 +1,48 @@
+<snippet>
+	<content><![CDATA[
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>titlecontent</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            check popper.js
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+    <!-- jQuery Popper.JS Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <script type="text/javascript">
+    \$(function() {
+        console.log('jquery is fine.');
+    });
+    </script>
+</body>
+
+</html>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>newboot</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html.basic</scope>
+</snippet>

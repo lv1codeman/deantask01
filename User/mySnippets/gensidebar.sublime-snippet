@@ -1,0 +1,64 @@
+<snippet>
+	<content><![CDATA[
+<!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            </a>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Addons
+            </div>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">寶山校區</h6>
+                        <a class="collapse-item active" href="總變電站.html">　總變電站</a>
+                        <a class="collapse-item active" href="力行館.html">　力行館</a>
+                        <a class="collapse-item active" href="育成中心.html">　育成中心</a>
+                        <a class="collapse-item active" href="汙水處理廠.html">　汙水處理廠</a>
+                        <a class="collapse-item active" href="經世館.html">　經世館</a>
+                        <a class="collapse-item active" href="教學一館.html">　教學一館</a>
+                        <a class="collapse-item active" href="工學院.html">　工學院</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="collapse-item active" href="第九宿舍.html">　第九宿舍</a>
+                        <a class="collapse-item active" href="第十宿舍.html">　第十宿舍</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">資料來源</h6>
+                        <a class="collapse-item active" href="資料欄位.html">　資料欄位</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+        <!-- End of Sidebar -->
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gensidebar</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html.basic</scope>
+</snippet>

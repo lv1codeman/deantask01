@@ -1,0 +1,35 @@
+[
+{
+    "keys": ["alt+b"],
+    "command": "open_in_browser"
+},
+{
+    "keys": ["ctrl+alt+s"],
+    "command": "reindent"
+},
+{
+    "keys": ["alt+s"],
+    "command": "htmlprettify"
+},
+{
+    "keys": ["ctrl+alt+c"],
+    "command": "color_pick"
+},
+{
+    "keys": ["alt+f"],
+    "command": "fold"
+},
+{
+    "keys": ["alt+g"],
+    "command": "unfold"
+},
+{
+    "keys": ["ctrl+shift+h"],
+    "command": "show_panel",
+    "args":
+    {
+        "panel": "replace",
+        "reverse": false,
+        "in_selection": true
+    }
+}]

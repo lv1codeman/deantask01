@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+        <![CDATA[
+alert('');
+]]>
+    </content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>al</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.html.basic source.js.embedded.html meta.function-call.js meta.group.js meta.function.js meta.block.js</scope>
+</snippet>
